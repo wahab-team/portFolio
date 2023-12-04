@@ -1,5 +1,26 @@
 import streamlit as st
+import requests
 import pandas as pd
+
+def get_repo_data(username, repo_name):
+    url = f"https://api.github.com/repos/{username}/{repo_name}"
+    response = requests.get(url)
+    if response.status_code == 200:
+        return response.json()
+    else:
+        return None
+
+repo_data = get_repo_data("wahabu", "wahabu")
+
+if repo_data:
+    st.title(repo_data["name"])
+    st.write("Description:", repo_data["description"])
+    st.write("Forks Count:", repo_data["forks_count"])
+    st.write("Stars:", repo_data["stargazers_count"])
+    # I will add more info as needed
+else:
+    st.error("Error fetching repo data")
+
 
 st.title("PortFolio App")
 st.write("This is my App")
