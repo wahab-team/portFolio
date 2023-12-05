@@ -141,7 +141,10 @@ serverAddress = "localhost"
 
 # Whether to send usage statistics to Streamlit.
 # Default: true
-gatherUsageStats = true
+[browser]
+gatherUsageStats = false
+showMainMenu = false
+
 
 # Port where users should point their browsers in order to connect to the
 # app.

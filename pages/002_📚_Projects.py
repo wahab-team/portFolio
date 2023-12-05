@@ -1,12 +1,6 @@
 import streamlit as st
 
-hide_streamlit_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 st.set_page_config(
     page_title="Projects",
     page_icon="📚",
@@ -25,6 +19,13 @@ st.set_page_config(
 # </style>            
 # """, unsafe_allow_html=True)
 
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 st.title("Projects")
 
