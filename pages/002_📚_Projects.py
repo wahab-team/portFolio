@@ -7,6 +7,7 @@ st.markdown("""
 {
     visibility: hidden;
 }
+
 .styles_terminalButton__JBj5T
 {
     visibility: hidden;
