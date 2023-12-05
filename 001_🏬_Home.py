@@ -4,8 +4,15 @@ st.set_page_config(
     page_title="PortFolio App",
     page_icon="👋",
 )
-
-st.title("Main Page")
+st.markdown("""
+<style>
+.st-emotion-cache-czk5ss.e16jpq800
+{
+    visibility: hidden;
+}
+</style>            
+""", unsafe_allow_html=True)
+st.title("Welcome!")
 st.sidebar.success("Select a page above.")
 
 if "my_input" not in st.session_state:
