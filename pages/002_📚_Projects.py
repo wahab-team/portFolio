@@ -19,4 +19,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 st.title("Projects")
 
-st.write("You have entered", st.session_state["my_input"])
+if st.session_state.get("my_input"):
+    st.write("You have entered", st.session_state["my_input"])
+else:
+    st.write("Please Input your text")
