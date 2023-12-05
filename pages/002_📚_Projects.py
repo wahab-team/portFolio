@@ -4,7 +4,7 @@ st.set_page_config(
     page_title="Projects",
     page_icon="📚",
 )
-st.markdown("""
+# st.markdown("""
 # <style>
 # .st-emotion-cache-czk5ss.e16jpq800
 # {
